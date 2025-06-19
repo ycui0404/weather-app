@@ -108,6 +108,11 @@ export default function DataPage() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-4 sm:p-8 bg-gradient-to-br from-blue-100 via-white to-blue-200 dark:from-gray-900 dark:via-black dark:to-gray-800">
       <Card className="w-full max-w-lg shadow-xl">
+        <div className="mb-4">
+          <Button variant="outline" onClick={() => window.history.back()}>
+            ← Back
+          </Button>
+        </div>
         <CardHeader>
           <CardTitle className="text-2xl text-center">Weather Data Query</CardTitle>
         </CardHeader>
